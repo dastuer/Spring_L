@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <beans>
+        <bean id="address" name="address" class="com.hu.pojo.Address">
+
+            <property name="address" value="你家"/>
+        </bean>
+        <bean id="s01" name="s01;s1;student01" class="com.hu.pojo.Student">
+            <!--      普通注入      -->
+            <property name="name" value="老王"/>
+            <!--     参考注入       -->
+            <property name="address" ref="address"/>
+            <!--      数组注入      -->
+            <property name="books">
+                <array>
+                    <value>计算机网络</value>
+                    <value>高级程序设计</value>
+                    <value>数据结构与算法</value>
+                </array>
+            </property>
+            <!--     列表注入       -->
+            <property name="hobbies">
+                <list>
+                    <value>看书</value>
+                    <value>编程</value>
+                    <value>打游戏</value>
+                </list>
+            </property>
+            <!--      map注入       -->
+            <property name="card">
+                <map>
+                    <entry key="PID" value="10201031"/>
+                    <entry key="CID" value="0121212"/>
+                </map>
+            </property>
+            <!--      set注入       -->
+            <property name="game">
+                <set>
+                    <value>LOL</value>
+                    <value>GOG</value>
+                    <value>GTA</value>
+                    <value>RDR</value>
+                </set>
+            </property>
+            <!--     null注入       -->
+            <property name="wife">
+                <null/>
+            </property>
+            <!--     属性注入       -->
+            <property name="info">
+                <props>
+                    <prop key="username">ddac</prop>
+                    <prop key="password">asdasd</prop>
+                </props>
+            </property>
+        </bean>
+    </beans>
+
+</beans>

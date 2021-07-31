@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--  引入外部配置文件：优先级更大  -->
+    <properties resource="db.properties"/>
+    <!--  设置  -->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <typeAliases>
+        <!--  给路径下的类(javabean)指定类名为别名 ,为类名小写 -->
+        <package name="com.hu.pojo"/>
+    </typeAliases>
+
+    <!--核心配置文件-->
+    <environments default="development">
+        <environment id="development">
+            <!--      事务类型      -->
+            <transactionManager type="JDBC"/>
+            <!--    数据源类型        -->
+            <dataSource type="POOLED">
+<!--                     ${property}调用外部配置信息property           -->
+<!--                <property name="driver" value="${driver}"/>-->
+<!--                <property name="url" value="${url}"/>-->
+<!--                <property name="username" value="${username}"/>-->
+<!--                <property name="password" value="${password}"/>-->
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!--    添加映射器 方法1，资源路径   -->
+        <!--        <mapper resource="com/hu/mapper/UserMapper.xml"/>-->
+        <!--    方法2，映射器，接口路径    -->
+<!--        <mapper class="com.hu.mapper.UserMapper"/>-->
+        <!--    方法3，扫描包中配置文件     -->
+        <!--        <package name="com.hu.mapper"/>-->
+    </mappers>
+</configuration>

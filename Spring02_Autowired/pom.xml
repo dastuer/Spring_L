@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Spring01</artifactId>
+    <artifactId>Spring02_Autowired</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -33,9 +34,13 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.3.2</version>
+        </dependency>
     </dependencies>
-
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>

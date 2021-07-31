@@ -10,7 +10,26 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Spring01</module>
+        <module>Spring02_Autowired</module>
+        <module>Spring03_annotation</module>
+        <module>Spring_appConfig</module>
+        <module>Spring05</module>
+        <module>Spring06_AOP</module>
+        <module>Spring07_mybatis</module>
     </modules>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.3.9</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
