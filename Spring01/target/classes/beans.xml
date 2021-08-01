@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean  name="hello" id="helloWorld" class="com.hu.pojo.Hello">
+        <property name="name" value="Hello World!" />
+        <property name="size" value="20"/>
+    </bean>
+    <bean id="user" class="com.hu.pojo.User">
+        <property name="age" value="20"/>
+        <property name="name" value="老王"/>
+        <property name="id" value="01"/>
+     </bean>
+    <!--  构造器创建对象  -->
+
+<!--    <bean class="com.hu.pojo.User" id="user">-->
+<!--        <constructor-arg type="int" value="01"/>-->
+<!--        <constructor-arg type="java.lang.String" value="你爹"/>-->
+<!--        <constructor-arg type="int" value="20"/>-->
+<!--    </bean>-->
+
+</beans>

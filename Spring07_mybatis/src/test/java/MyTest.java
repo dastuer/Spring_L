@@ -31,7 +31,7 @@ public class MyTest {
     @Test
     public void testSpringMybatis(){
         ClassPathXmlApplicationContext con = new ClassPathXmlApplicationContext("app.xml");
-        UserMapper userMapper = con.getBean("userMapper",UserMapper.class);
+        UserMapper userMapper = con.getBean("userMapper2",UserMapper.class);
         System.out.println(userMapper.getUsers());
     }
 }

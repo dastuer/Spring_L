@@ -7,6 +7,14 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
     <import resource="daoBeans.xml"/>
+    <!--  方法1：获取SqlSessionTemplate后注入到实现类  -->
+    <bean id="userMapper" class="com.hu.mapper.UserMapperImpl">
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+    <!-- 方法2：数据接口实现类继承SqlSessionDaoSupport类，注入sqlSessionFactoryBean   -->
+    <bean id="userMapper2" class="com.hu.mapper.UserMapperImpl2">
+        <property name="sqlSessionFactory" ref="factory"/>
+    </bean>
 
 
 </beans>

@@ -12,10 +12,11 @@
         <module>Spring01</module>
         <module>Spring02_Autowired</module>
         <module>Spring03_annotation</module>
-        <module>Spring_appConfig</module>
+        <module>Spring04_appConfig</module>
         <module>Spring05</module>
         <module>Spring06_AOP</module>
         <module>Spring07_mybatis</module>
+        <module>Spring08_transaction</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
@@ -28,6 +29,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>5.3.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>2.0.6</version>
         </dependency>
     </dependencies>
 

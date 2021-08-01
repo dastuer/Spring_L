@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config/>
+    <bean id="cat" class="com.hu.pojo.Cat" p:name="littleWhite"/>
+    <bean id="cat1" class="com.hu.pojo.Cat" p:name="littleWhite1"/>
+    <bean id="dog" class="com.hu.pojo.Dog" p:name="littleBlack"/>
+    <bean id="dog1" class="com.hu.pojo.Dog" p:name="littleBlack1"/>
+    <bean name="me" id="self" class="com.hu.pojo.Human"/>
+</beans>

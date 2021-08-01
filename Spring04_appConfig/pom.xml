@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Spring_appConfig</artifactId>
+    <artifactId>Spring04_appConfig</artifactId>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
